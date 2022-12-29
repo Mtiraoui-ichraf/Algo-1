@@ -1,0 +1,34 @@
+ALGORITHM algorithm_phrase
+
+VAR
+
+Nbmot :integer:= 1;
+Nbv :integer:= 0;
+Nblength :integer:= 0;
+i := 0;
+K : string;
+T:array :=["a","e","i","o","u","y"];
+
+BEGIN
+
+write("Enter phrase") 
+read (K) 
+for (i=0; i< K.length; i++) {
+if (K[i] =" "){
+Nbmot +=1
+}
+
+if (K[i] in T){
+Nblength +=1
+}
+
+if (K[i] in T){
+Nbv +=1
+}
+
+}
+write ("number of word is ", Nbmot)
+write ("number of vowels is" ,Nbv)
+write ("number of characters is" , Nblengh)
+
+END
